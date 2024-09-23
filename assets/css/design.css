@@ -48,8 +48,17 @@ body {
   font-family: 'Inter';
 }
 
+body a {
+  text-decoration: none;
+}
 
-.header {
+body ul {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+}
+
+.header-mb-tb {
   background-color: #FAFBFC;
   display: flex;
   justify-content: space-between;
@@ -449,6 +458,10 @@ text-decoration: none;
   color: #5F6D7E;
 }
 
+.only-desktop-section {
+  display: none;
+}
+
 .contact-section {
   background-color: #FAFBFC;
   padding-inline: 16px;
@@ -602,6 +615,15 @@ text-decoration: none;
     padding: 48px;
   }
 
+  .product-features-mb-tb {
+    display: block;
+  }
+
+  .product-features-desktop {
+    display: none;
+  }
+
+
   .hero-btns {
     display: flex;
     flex-direction: row;
@@ -628,7 +650,7 @@ text-decoration: none;
     gap: 32px;
   }
 
-  .product-features {
+  .product-features-mb-tb {
     padding-inline: 32px;
     padding-block: 40px;
   } 
@@ -758,8 +780,10 @@ text-decoration: none;
   .header-desktop {
      display: flex;
      gap: 420px;
+     align-items: center;
      padding-inline: 80px;
      padding-block: 20px;
+     background-color: #F8F9FB;
   }
   
   .header-left {
@@ -775,7 +799,31 @@ text-decoration: none;
   .header-right {
     display: flex;
     gap: 24px;
+    align-items: center;
+    text-decoration: none;
   }
+
+  .sign-btn {
+   font-family: 'Inter';
+   font-size: 15px;
+   font-weight: 600;
+   line-height: 22px;
+   color: #437EF7;
+  }
+
+  .log-btn {
+    background-color: #437EF7;
+    color: #FFFFFF;
+
+    border-radius: 6px;
+    padding: 12px 18px;
+
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22px;
+  }
+
 
   .hero {
     display: none;
@@ -821,6 +869,10 @@ text-decoration: none;
     margin-bottom: 64px;
   }
 
+  .product-features-text {
+    margin-bottom: 40px;
+  }
+ 
   .products {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -844,4 +896,66 @@ text-decoration: none;
   .gray {
     background-color: #FAFBFC;
   }
+
+  .customer-comment {
+    padding-inline: 80px;
+    padding-block: 64px;
+    gap: 64px;
+  }
+
+  .customer-comments {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+  }
+
+  .latest-blog-post {
+    gap: 64px;
+    padding-inline: 80px;
+    padding-block: 64px;
+  }
+
+  .posts {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .only-desktop-section {
+    padding-inline: 80px;
+    padding-block: 64px;
+    text-align: center;
+    display: block;
+  }
+
+  .only-desktop-section h3 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+    color: #272D37;
+    margin-bottom: 16px;
+  }
+
+  .only-desktop-section p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.10000000149011612px;
+    color: #5F6D7E;
+    margin-bottom: 64px;
+  }
+
+  .only-desktop-section img {
+    vertical-align: middle;
+  }
+
+  .contact-section {
+    padding-block: 64px;
+    align-content: center;
+  }
+
+  .contact-btns {
+    margin-inline: auto;
+  }
+
 }  
